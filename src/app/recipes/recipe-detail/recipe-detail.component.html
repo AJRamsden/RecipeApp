@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-xs-12">
-    <img class="img-responsive" src="" alt="">
+    <img class="img-responsive" [src]="displaySelectedRecipe.imagePath" alt="{{ displaySelectedRecipe.name }}" style="height:300px;">
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h1>Recipe Name</h1>
+    <h1 >{{ displaySelectedRecipe.name }}</h1>
   </div>
 </div>
 <div class="row">
@@ -29,7 +29,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    Description
+    {{ displaySelectedRecipe.description }}
   </div>
 </div>
 <div class="row">
